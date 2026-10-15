@@ -1,0 +1,25 @@
+
+
+PROCESS SCHEDULING TABLE:
+Process Arrival Ready   Response  Terminate Turnaround  Waiting   
+--------------------------------------------------------------------------------
+P1      0       0       3         22        22          6         
+P2      11      12      31        42        31          15        
+P3      18      20      27        56        38          16        
+P4      23      26      16        39        16          8         
+--------------------------------------------------------------------------------
+Total Time: 56 units
+CPU Busy Time: 39 units
+CPU Utilization: 69.64 %
+Throughput: 0.07 processes/unit-time
+Average Turnaround Time: 26.75 units
+Average Waiting Time: 11.25 units
+Average Response Time: 19.25 units
+
+Gantt-Chart:
+--------------------------------------------------------------------------------
+| P1 || IDLE || DL || P1 || DL || P2 || DL || P1 || DL || P2 || DL || P3 || DL || P4 || DL || P2 || DL || P3 || IDLE || DL || P3 |
+0     3     6     7     12    13    18    19    22    23    28    29    34    35    39    40    42    43    45    50    51    56    
+--------------------------------------------------------------------------------
+
+Trace written to trace.txt
